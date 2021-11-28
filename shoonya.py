@@ -9,12 +9,12 @@ logging.basicConfig(level=logging.DEBUG)
 api = NorenApiPy()
 
 #credentials
-user        = 'FA42707'
+user        = ${{secret.user}}
 u_pwd       = ${{secret.u_pwd}}
-factor2     = 'ARNPM5630L'
-vc          = 'FA42707_U'
+factor2     = ${{secret.factor2}}
+vc          = ${{secret.vc}}
 app_key     = ${{secret.app_key}}
-imei        = '9000530962'
+imei        = ${{secret.imei}}
 
 
 ret = api.login(userid=user, password=u_pwd, twoFA=factor2, vendor_code=vc, api_secret=app_key, imei=imei)
