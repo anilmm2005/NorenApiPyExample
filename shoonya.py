@@ -13,7 +13,7 @@ user        = 'FA42707'
 u_pwd       = ${{secret.u_pwd}}
 factor2     = 'ARNPM5630L'
 vc          = 'FA42707_U'
-app_key     = 'APILi23112021LOP09I1D911A'
+app_key     = ${{secret.app_key}}
 imei        = '9000530962'
 
 
